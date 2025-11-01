@@ -1,8 +1,3 @@
-Aqui está uma excelente sugestão de `README.md` para o seu projeto no GitHub. Ele está formatado em Markdown, então pode copiar e colar diretamente.
-
------
-
-````markdown
 # Regressão Linear "do Zero" com Dados de Erupção
 
 ## 📖 Descrição do Projeto
@@ -23,32 +18,30 @@ A regressão linear, representada pela equação $y = a + bx$, foi totalmente ca
 
 ## 📊 Funcionalidades
 
-O código-fonte realiza as seguintes etapas:
+O código-fonte realiza as quatro etapas da atividade:
 
-1.  **Cálculo dos Somatórios:** Calcula $\sum x$, $\sum y$, $\sum xy$, e $\sum x^2$ usando loops `for` básicos.
-2.  **Cálculo dos Coeficientes:** Determina os valores de $a$ (intercepto) e $b$ (slope) da reta de regressão.
-3.  **Gráfico de Dispersão:** Plota os dados brutos ($x, y$) para visualizar a distribuição (Item 2 da atividade).
-4.  **Plotagem da Reta:** Sobrepõe a reta de regressão ($y = a + bx$) ao gráfico de dispersão (Item 3 da atividade).
-5.  **Coeficiente de Determinação ($R^2$):** (Opcional, mas recomendado) Calcula o $R^2$ para avaliar a qualidade do ajuste do modelo (Item 4 da atividade).
+1.  **Cálculo dos Coeficientes:** Determina os valores de $a$ (intercepto) e $b$ (slope) da reta de regressão (Item 1).
+2.  **Gráfico de Dispersão:** Plota os dados brutos ($x, y$) para visualizar a distribuição (Item 2).
+3.  **Plotagem da Reta:** Sobrepõe a reta de regressão ($y = a + bx$) ao gráfico de dispersão (Item 3).
+4.  **Cálculo do $R^2$:** Calcula o Coeficiente de Determinação ($R^2$) para avaliar a qualidade do ajuste do modelo (Item 4).
+
+## 🎯 Avaliação do Modelo (R²)
+
+Para medir a eficácia do modelo, o **Coeficiente de Determinação ($R^2$)** também foi calculado manualmente.
+
+O $R^2$ indica a proporção da variância na variável $y$ (Intervalo) que é previsível a partir da variável $x$ (Duração).
+
+**Fórmula Manual Utilizada:**
+$$R^2 = 1 - \frac{SQ_{res}}{SQ_{tot}}$$
+
+Onde:
+* **$SQ_{tot}$ (Soma dos Quadrados Total):** $\sum (y_i - \bar{y})^2$. Mede a variação total dos dados $y$ em torno da média $\bar{y}$.
+* **$SQ_{res}$ (Soma dos Quadrados dos Resíduos):** $\sum (y_i - \hat{y}_i)^2$. Mede o erro (variação não explicada) entre os pontos reais ($y_i$) e os pontos previstos pela reta ($\hat{y}_i$).
+
+Um $R^2$ próximo de 1 indica um ajuste excelente, mostrando que o modelo explica uma grande parte da variação dos dados.
 
 ## 🛠️ Tecnologias Utilizadas
 
 * **Python 3:** Linguagem principal.
 * **Matplotlib:** Usada exclusivamente para a visualização dos dados (gráfico de dispersão e reta).
-* **(Opcional) NumPy:** Utilizado para facilitar operações em vetores ao gerar os pontos da reta para plotagem.
-
-## 🏃 Como Executar
-
-1.  Clone este repositório:
-    ```bash
-    git clone [URL_DO_SEU_REPOSITORIO]
-    ```
-2.  Navegue até a pasta do projeto:
-    ```bash
-    cd [NOME_DA_PASTA]
-    ```
-3.  Execute o script Python:
-    ```bash
-    python nome_do_seu_arquivo.py
-    ```
-````
+* **NumPy:** Utilizado para facilitar operações em vetores ao gerar os pontos da reta para plotagem.
