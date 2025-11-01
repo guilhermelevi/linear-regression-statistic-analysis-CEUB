@@ -1,3 +1,8 @@
+Aqui está uma excelente sugestão de `README.md` para o seu projeto no GitHub. Ele está formatado em Markdown, então pode copiar e colar diretamente.
+
+-----
+
+````markdown
 # Regressão Linear "do Zero" com Dados de Erupção
 
 ## 📖 Descrição do Projeto
@@ -31,4 +36,19 @@ O código-fonte realiza as seguintes etapas:
 * **Python 3:** Linguagem principal.
 * **Matplotlib:** Usada exclusivamente para a visualização dos dados (gráfico de dispersão e reta).
 * **(Opcional) NumPy:** Utilizado para facilitar operações em vetores ao gerar os pontos da reta para plotagem.
+
+## 🏃 Como Executar
+
+1.  Clone este repositório:
+    ```bash
+    git clone [URL_DO_SEU_REPOSITORIO]
     ```
+2.  Navegue até a pasta do projeto:
+    ```bash
+    cd [NOME_DA_PASTA]
+    ```
+3.  Execute o script Python:
+    ```bash
+    python nome_do_seu_arquivo.py
+    ```
+````
